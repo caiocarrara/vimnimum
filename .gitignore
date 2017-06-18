@@ -1,0 +1,5 @@
+vimrcs/my_*
+undodir/*
+!undodir/README.md
+plugged/*
+!plugged
