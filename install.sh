@@ -9,10 +9,11 @@ fi
 
 echo '
 set runtimepath+=~/.vimnimum
-source ~/.vimnimum/plugins.vim
-source ~/.vimnimum/generals.vim
-source ~/.vimnimum/mappings.vim
-source ~/.vimnimum/filetypes.vim
+source ~/.vimnimum/vimrcs/plug.vim
+source ~/.vimnimum/vimrcs/plugins.vim
+source ~/.vimnimum/vimrcs/generals.vim
+source ~/.vimnimum/vimrcs/mappings.vim
+source ~/.vimnimum/vimrcs/filetypes.vim
 ' > ~/.vimrc
 
 # create undodir
