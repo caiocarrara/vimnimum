@@ -5,8 +5,8 @@ let mapleader = ","
 let g:mapleader = ","
 
 " Navigate through buffs
-nmap <C-h> :BB<CR>
-nmap <C-l> :BF<CR>
+nmap <C-h> :bprevious<CR>
+nmap <C-l> :bnext<CR>
 
 " Close buff
 map <F2> :BD<cr>
