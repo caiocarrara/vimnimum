@@ -31,6 +31,7 @@ Plug 'vim-syntastic/syntastic'
 " Syntax highlight
 Plug 'jelera/vim-javascript-syntax'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'Glench/Vim-Jinja2-Syntax'
 
 " Python
 Plug 'jimf/vim-pep8-text-width'
