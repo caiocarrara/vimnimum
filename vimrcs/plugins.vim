@@ -46,7 +46,8 @@ call plug#end()
 """"""""""""""""""""""
 " NerdTree
 let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
-let NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__']
+let NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', '\.egg-info', '\.git$', '\.cache', '\.tox']
+let NERDTreeShowHidden=1
 
 " Airline
 let g:airline_theme='onedark'
