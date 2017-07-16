@@ -2,9 +2,13 @@
 " => HTML
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set 2 tabspaces (identation) for html files
+autocmd BufNewFile,BufRead *.jinja2,*.j2,*.jinja,*.nunjucks,*.nunjs,*.njk set ft=jinja
+autocmd BufNewFile,BufRead *.jinja set syntax=htmljinja
+
 autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype htmldjango setlocal ts=2 sts=2 sw=2 expandtab
-au BufNewFile,BufRead *.jinja set syntax=htmljinja
+autocmd Filetype jinja setlocal ts=2 sts=2 sw=2 expandtab
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
