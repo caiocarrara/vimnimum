@@ -29,7 +29,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-syntastic/syntastic'
 
 " Syntax highlight
-Plug 'jelera/vim-javascript-syntax'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'rust-lang/rust.vim'
@@ -40,6 +39,9 @@ Plug 'Vimjas/vim-python-pep8-indent'
 
 " Django template syntax highlight
 Plug 'django.vim'
+
+" Javascript
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
 
