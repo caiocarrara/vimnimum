@@ -47,3 +47,9 @@ au BufRead,BufNewFile *.scss set filetype=scss.css
 " => CSS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd Filetype css setlocal ts=2 sts=2 sw=2 expandtab
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Git commit
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd Filetype gitcommit setlocal tw=72
