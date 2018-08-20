@@ -7,6 +7,8 @@ Plug 'joshdick/onedark.vim'
 Plug 'nanotech/jellybeans.vim'
 Plug 'tomasr/molokai'
 Plug 'rakr/vim-one'
+Plug 'dracula/vim', {'as': 'dracula'}
+Plug 'morhetz/gruvbox'
 
 " Basic
 Plug 'scrooloose/nerdtree'
