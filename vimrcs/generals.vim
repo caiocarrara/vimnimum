@@ -4,10 +4,23 @@
 " Enable syntax highlighting
 syntax enable
 set background=dark
-try
+
+" Vim GUI
+if has('gui_running')
+    set guioptions-=m  "remove menu bar
+    set guioptions-=T  "remove toolbar
+    set guioptions-=r  "remove right-hand scroll bar
+    set guioptions-=L  "remove left-hand scroll bar
+    set mouse=c
+
+    colorscheme gruvbox
+    let g:gruvbox_contrast_dark='hard'
+    let g:gruvbox_contrast_light='hard'
+
+    set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
+else
     colorscheme onedark
-catch
-endtry
+endif
 
 " Brackets colors match
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
