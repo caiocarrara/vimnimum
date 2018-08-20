@@ -64,7 +64,11 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 " Airline
-let g:airline_theme='onedark'
+if has('gui_running')
+    let g:airline_theme='gruvbox'
+else
+    let g:airline_theme='onedark'
+endif
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
