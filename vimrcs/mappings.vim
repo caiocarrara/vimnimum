@@ -13,6 +13,7 @@ map <F2> :BD<cr>
 
 " NerdTree Toggle
 map <C-n> :NERDTreeToggle<CR>
+map <C-f> :NERDTreeFind<CR>
 
 " TagBar Toggle
 nmap <F8> :TagbarToggle<CR>
