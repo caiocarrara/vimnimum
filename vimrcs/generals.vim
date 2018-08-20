@@ -28,6 +28,9 @@ set cursorline
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
+" Set no splits separator
+set fillchars=""
+
 " Turn on the Wild menu
 set wildmenu
 
