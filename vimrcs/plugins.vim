@@ -91,7 +91,7 @@ let g:ctrlp_working_path_mode = 0
 map <leader>j :CtrlP<cr>
 map <c-b> :CtrlPBuffer<cr>
 let g:ctrlp_max_height = 20
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|tox|ico|git|hg|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|__pycache__)|(\.(swp|tox|ico|git|hg|svn))$'
 
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
