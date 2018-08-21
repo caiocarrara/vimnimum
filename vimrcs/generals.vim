@@ -12,6 +12,7 @@ if has('gui_running')
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
     set mouse=c
+    autocmd GUIEnter * set vb t_vb=
 
     colorscheme gruvbox
     let g:gruvbox_contrast_dark='hard'
