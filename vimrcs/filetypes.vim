@@ -23,6 +23,7 @@ autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set textwidth for Markdown files
 autocmd Filetype markdown set tw=80
+autocmd BufNewFile,BufRead *.md,*.markdown set syntax=markdown
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
