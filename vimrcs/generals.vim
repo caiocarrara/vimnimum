@@ -160,5 +160,7 @@ set wrap
 set linebreak
 set nolist
 
+set tw=72
+
 " No brackts match
 let loaded_matchparen = 1 
