@@ -24,7 +24,7 @@ autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 tw=0 expandtab
 " Set textwidth for Markdown files
 autocmd BufNewFile,BufRead *.md,*.markdown set filetype=markdown
 autocmd BufNewFile,BufRead *.md,*.markdown set syntax=markdown
-autocmd Filetype markdown set tw=80
+autocmd BufNewFile,BufRead *.md,*.markdown set tw=72 spell spelllang=en_us
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -42,16 +42,16 @@ let g:syntastic_python_flake8_args="--ignore=E501"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => SCSS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-au BufRead,BufNewFile *.scss set filetype=scss.css
+au BufRead,BufNewFile *.scss set tw=0 filetype=scss.css
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => CSS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd Filetype css setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype css setlocal ts=2 sts=2 sw=2 tw=0 expandtab
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git commit
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd Filetype gitcommit setlocal tw=72
+autocmd Filetype gitcommit setlocal tw=72 spell spelllang=en_us
