@@ -10,6 +10,12 @@ autocmd Filetype htmldjango set ts=2 sts=2 sw=2 tw=0 expandtab
 autocmd Filetype jinja set ts=2 sts=2 sw=2 tw=0 expandtab
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => YAML
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" set 2 tabspaces (identation) for yaml files
+autocmd BufNewFile,BufRead *.yaml,*.yml set ft=yaml
+autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => JS
