@@ -20,7 +20,7 @@ if has('gui_running')
 
     set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
 else
-    colorscheme onedark
+    colorscheme dracula
 endif
 
 " Brackets colors match
