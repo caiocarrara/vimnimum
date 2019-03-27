@@ -18,7 +18,7 @@ if has('gui_running')
     let g:gruvbox_contrast_dark='hard'
     let g:gruvbox_contrast_light='hard'
 
-    set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 10
+    set guifont=Hack\ 10
 else
     colorscheme dracula
 endif
