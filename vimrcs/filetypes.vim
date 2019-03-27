@@ -40,9 +40,9 @@ autocmd BufNewFile,BufRead *.md,*.markdown set tw=72 spell spelllang=en_us
 iab IPDB import ipdb; ipdb.set_trace()
 iab PDB import pdb; pdb.set_trace()
 
-let g:pep8_text_width = 120
-let g:pep8_comment_text_width = 120
-let g:syntastic_python_flake8_args="--ignore=E501"
+let g:pep8_text_width = 100
+let g:pep8_comment_text_width = 100
+let g:syntastic_python_flake8_args="--ignore=E203,E266,E501,W503,W504"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
