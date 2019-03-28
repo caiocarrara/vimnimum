@@ -9,7 +9,7 @@ nmap <C-h> :bprevious<CR>
 nmap <C-l> :bnext<CR>
 
 " Close buff
-map <F2> :BD<cr>
+map <F2> :BD!<CR>
 
 " NerdTree Toggle
 map <C-n> :NERDTreeToggle<CR>
