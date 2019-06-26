@@ -41,8 +41,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'ludovicchabant/vim-gutentags'
 
 " Python
-Plug 'jimf/vim-pep8-text-width'
-Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'ambv/black'
 
 " Django template syntax highlight
 Plug 'django.vim'
