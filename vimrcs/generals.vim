@@ -14,20 +14,18 @@ if has('gui_running')
     set mouse=c
     autocmd GUIEnter * set vb t_vb=
 
-    colorscheme gruvbox
-    let g:gruvbox_contrast_dark='hard'
-    let g:gruvbox_contrast_light='hard'
-    let g:gruvbox_improved_strings=1
-    let g:gruvbox_improved_warnings=1
-
     set guifont=Hack\ 10
-elseif has('nvim')
+endif
+
+if has('gui_running') || has('nvim')
     colorscheme gruvbox
     let g:gruvbox_contrast_dark='hard'
     let g:gruvbox_contrast_light='hard'
     let g:gruvbox_improved_strings=1
     let g:gruvbox_improved_warnings=1
     let g:gruvbox_italic=1
+    let g:gruvbox_bold=1
+    let g:gruvbox_invert_indent_guides=0
     set termguicolors
 else
     colorscheme dracula

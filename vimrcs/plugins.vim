@@ -65,9 +65,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 " Airline
-if has('gui_running')
-    let g:airline_theme='gruvbox'
-elseif has('nvim')
+if has('gui_running') || has('nvim')
     let g:airline_theme='gruvbox'
 else
     let g:airline_theme='dracula'
@@ -84,9 +82,9 @@ set laststatus=2
 
 
 " Syntastic
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_aggregate_errors = 1
