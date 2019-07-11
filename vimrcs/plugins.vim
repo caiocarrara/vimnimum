@@ -67,9 +67,12 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " Airline
 if has('gui_running')
     let g:airline_theme='gruvbox'
+elseif has('nvim')
+    let g:airline_theme='gruvbox'
 else
-    let g:airline_theme='onedark'
+    let g:airline_theme='dracula'
 endif
+
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
