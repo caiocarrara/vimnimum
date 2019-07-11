@@ -39,7 +39,9 @@ Plug 'rust-lang/rust.vim'
 
 " Python
 Plug 'Vimjas/vim-python-pep8-indent'
-Plug 'ambv/black'
+if !has('nvim')
+    Plug 'ambv/black'
+endif
 
 " Django template syntax highlight
 Plug 'django.vim'
