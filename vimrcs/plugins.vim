@@ -37,9 +37,6 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'rust-lang/rust.vim'
 
-" Ctags
-Plug 'ludovicchabant/vim-gutentags'
-
 " Python
 Plug 'ambv/black'
 
