@@ -38,6 +38,7 @@ Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'rust-lang/rust.vim'
 
 " Python
+Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'ambv/black'
 
 " Django template syntax highlight
