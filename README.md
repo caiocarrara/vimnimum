@@ -39,6 +39,7 @@ $ rm -r ~/.vimnimum
 * Make sure you have `vim-gtk` or `vim-gnome` package installed so copy and
   paste can work well with system's clipboard
 * flake8 is needed to Python checks.
+* xclip is needed to copy and paste work on NeoVim
 
 
 *This project started as a fork from
