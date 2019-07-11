@@ -20,7 +20,10 @@ if has('gui_running')
 
     set guifont=Hack\ 10
 else
-    colorscheme dracula
+    colorscheme gruvbox
+    let g:gruvbox_contrast_dark='hard'
+    let g:gruvbox_contrast_light='hard'
+    "colorscheme dracula
 endif
 
 " Brackets colors match
