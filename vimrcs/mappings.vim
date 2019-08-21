@@ -7,6 +7,8 @@ let g:mapleader = ","
 " Navigate through buffs
 nmap <C-h> :bprevious<CR>
 nmap <C-l> :bnext<CR>
+nmap <C-j> :tabnext<CR>
+nmap <C-k> :tabprevious<CR>
 
 " Close buff
 map <F2> :lclose<CR>:BD!<CR>
