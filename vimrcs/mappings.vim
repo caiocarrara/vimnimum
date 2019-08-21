@@ -26,3 +26,6 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Get Prettier (JS)
 nnoremap gp :silent %!prettier --stdin --stdin-filepath % --trailing-comma all --single-quote<CR>
+"
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
