@@ -11,7 +11,6 @@ Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'morhetz/gruvbox'
 
 " Basic
-Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
@@ -27,7 +26,6 @@ Plug 'gorodinskiy/vim-coloresque'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb' " enables gbrowse
 Plug 'airblade/vim-gitgutter'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Syntax check
 Plug 'vim-syntastic/syntastic'
@@ -55,17 +53,6 @@ call plug#end()
 """"""""""""""""""""""
 " => Configs
 """"""""""""""""""""""
-" NerdTree
-let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
-let NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', '\.egg-info', '\.git$', '\.cache', '\.pytest_cache', '\.tox', 'node_modules']
-let NERDTreeShowHidden=1
-let NERDTreeAutoDeleteBuffer = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-
 " Airline
 if has('gui_running') || has('nvim')
     let g:airline_theme='gruvbox'
