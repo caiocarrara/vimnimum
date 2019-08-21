@@ -96,3 +96,9 @@ if executable('ag')
     let g:ctrlp_user_command = 'ag %s --path-to-ignore ~/.ignore -l --nocolor -g ""'
     let g:ctrlp_use_caching = 0
 endif
+
+" Commenter
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDTrimTrailingWhitespace = 1
