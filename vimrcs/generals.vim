@@ -108,7 +108,19 @@ set scrolloff=999
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:netrw_browse_split = 4
-let g:netrw_winsize = 20
+let g:netrw_winsize = 15
+
+let g:netrw_list_hide = '.*\.git,'
+let g:netrw_list_hide .= '.*\.pyc$,'
+let g:netrw_list_hide .= '.*\.swp$,'
+let g:netrw_list_hide .= '.*__pycache__,'
+let g:netrw_list_hide .= '.*\.mypy_cache,'
+let g:netrw_list_hide .= '.*\.pytest_cache,'
+let g:netrw_list_hide .= '.*\.tx,'
+let g:netrw_list_hide .= '.*node_modules,'
+
+map <C-n> :Lex<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM Behaviour
@@ -146,6 +158,9 @@ endtry
 
 " Set to auto read when a file is changed from the outside
 set autoread
+
+" Change directory to the current buffer when opening files.
+set autochdir
 
 " Ignore case in some commands
 cab W w| cab Q q| cab Wq wq| cab wQ wq| cab WQ wq
