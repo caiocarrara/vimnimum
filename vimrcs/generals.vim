@@ -14,7 +14,7 @@ if has('gui_running')
     set mouse=c
     autocmd GUIEnter * set vb t_vb=
 
-    set guifont=Hack\ 10
+    set guifont=Hack\ 9
 endif
 
 if has('gui_running') || has('nvim')
