@@ -119,8 +119,6 @@ let g:netrw_list_hide .= '.*\.pytest_cache,'
 let g:netrw_list_hide .= '.*\.tx,'
 let g:netrw_list_hide .= '.*node_modules,'
 
-map <C-n> :Lex<CR>
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM Behaviour
