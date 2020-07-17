@@ -57,8 +57,8 @@ call plug#end()
 " => Configs
 """"""""""""""""""""""
 " NerdTree
-let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
-let NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', '\.egg-info', '\.git$', '\.cache', '\.pytest_cache', '\.tox', 'node_modules']
+let g:NERDTreeSortOrder = ['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
+let NERDTreeIgnore = ['\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', '\.egg-info', '\.git$', '\.pytest_cache', '\.tox', 'node_modules', '\.tx', '\.mypy_cache']
 let NERDTreeShowHidden=1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
@@ -107,7 +107,7 @@ let g:ctrlp_max_height = 20
 
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
-    let g:ctrlp_user_command = 'ag %s --path-to-ignore ~/.ignore -l --nocolor -g ""'
+    let g:ctrlp_user_command = 'ag %s --ignore .git --ignore "*vcr_cassettes*" -l --nocolor -g ""'
     let g:ctrlp_use_caching = 0
 endif
 
