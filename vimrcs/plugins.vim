@@ -22,6 +22,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'gorodinskiy/vim-coloresque'
+Plug 'sbdchd/neoformat'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -39,7 +40,9 @@ Plug 'rust-lang/rust.vim'
 
 " Python
 Plug 'Vimjas/vim-python-pep8-indent'
-Plug 'psf/black'
+
+" HTML
+Plug 'AndrewRadev/tagalong.vim'
 
 " Javascript
 Plug 'pangloss/vim-javascript'
