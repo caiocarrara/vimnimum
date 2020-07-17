@@ -49,6 +49,7 @@ Plug 'django.vim'
 " Javascript
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'isRuslan/vim-es6'
 
 call plug#end()
 
