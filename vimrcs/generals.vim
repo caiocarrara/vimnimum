@@ -157,9 +157,6 @@ endtry
 " Set to auto read when a file is changed from the outside
 set autoread
 
-" Change directory to the current buffer when opening files.
-set autochdir
-
 " Ignore case in some commands
 cab W w| cab Q q| cab Wq wq| cab wQ wq| cab WQ wq
 
