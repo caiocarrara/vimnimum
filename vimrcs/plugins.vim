@@ -23,6 +23,7 @@ Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'gorodinskiy/vim-coloresque'
 Plug 'sbdchd/neoformat'
+Plug 'sheerun/vim-polyglot'
 
 " Git
 Plug 'tpope/vim-fugitive'
