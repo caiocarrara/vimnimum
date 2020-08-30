@@ -44,6 +44,7 @@ Plug 'Vimjas/vim-python-pep8-indent'
 
 " HTML
 Plug 'AndrewRadev/tagalong.vim'
+Plug 'valloric/MatchTagAlways'
 
 " Javascript
 Plug 'pangloss/vim-javascript'
