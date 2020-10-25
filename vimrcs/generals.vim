@@ -31,6 +31,11 @@ else
     colorscheme dracula
 endif
 
+" Python support for nvim
+if has('nvim')
+    let g:python3_host_prog = '~/.vimnimum/pyvenv/bin/python'
+endif
+
 " Brackets colors match
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 

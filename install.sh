@@ -25,6 +25,14 @@ else
     echo "[+] Undodir create"
 fi
 
+# create Python virtualenv
+python -m venv $HOME/.vimnimum/pyvenv
+
+# install Python dependency for Neovim
+source $HOME/.vimnimum/pyvenv/bin/activate
+pip install pynvim
+deactivate
+
 vim -c ":PlugInstall|:qa"
 
 echo "[+] Installed the Ultimate Vim configuration successfully! Enjoy :-)"

@@ -4,3 +4,4 @@ undodir/*
 !undodir/README.md
 plugged/*
 !plugged
+pyvenv
