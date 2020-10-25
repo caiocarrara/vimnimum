@@ -39,9 +39,6 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'rust-lang/rust.vim'
 
-" Python
-Plug 'Vimjas/vim-python-pep8-indent'
-
 " HTML
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'valloric/MatchTagAlways'
