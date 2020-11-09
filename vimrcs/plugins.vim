@@ -32,7 +32,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Syntax check
-Plug 'vim-syntastic/syntastic'
+Plug 'dense-analysis/ale'
 
 " Syntax highlight
 Plug 'hail2u/vim-css3-syntax'
@@ -78,21 +78,8 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts = 1
 " Vim-airline appears even with only one window open
 set laststatus=2
-
-
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_javascript_checkers = ['eslint']
+" ALE on statusline
+let g:airline#extensions#ale#enabled = 1
 
 " JS
 let g:jsx_ext_required = 0  " Allow JSX in normal JS files
