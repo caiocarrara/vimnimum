@@ -14,14 +14,11 @@ Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-surround'
-Plug 'jiangmiao/auto-pairs'
 Plug 'qpkorr/vim-bufkill'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
-Plug 'gorodinskiy/vim-coloresque'
 Plug 'sbdchd/neoformat'
 Plug 'sheerun/vim-polyglot'
 
@@ -41,7 +38,7 @@ Plug 'rust-lang/rust.vim'
 
 " HTML
 Plug 'AndrewRadev/tagalong.vim'
-Plug 'valloric/MatchTagAlways'
+Plug 'gregsexton/matchtag'
 
 " Javascript
 Plug 'pangloss/vim-javascript'
