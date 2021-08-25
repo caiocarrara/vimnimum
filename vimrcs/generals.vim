@@ -68,7 +68,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 set ruler
 
 " A buffer becomes hidden when it is abandoned
-set hid
+set hidden
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent

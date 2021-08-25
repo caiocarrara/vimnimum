@@ -8,7 +8,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'tomasr/molokai'
 Plug 'rakr/vim-one'
 Plug 'dracula/vim', {'as': 'dracula'}
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 
 " Basic
 Plug 'scrooloose/nerdtree'
@@ -21,6 +21,9 @@ Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'sbdchd/neoformat'
 Plug 'sheerun/vim-polyglot'
+Plug 'Raimondi/delimitMate'
+Plug 'google/vim-searchindex'
+Plug 'svermeulen/vim-cutlass'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -70,7 +73,8 @@ endif
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
-let g:airline#extensions#tabline#fnamemod = ':t'
+" let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 " Doesn't show spelling language
 let g:airline_detect_spelllang=0
 " Enable powerline fonts
@@ -109,7 +113,7 @@ let g:airline_mode_map = {
 let g:jsx_ext_required = 0  " Allow JSX in normal JS files
 
 " CTRL-P
-let g:ctrlp_working_path_mode = 0
+let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_max_height = 20
 
 if executable('ag')
