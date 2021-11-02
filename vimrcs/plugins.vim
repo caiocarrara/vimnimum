@@ -54,7 +54,7 @@ call plug#end()
 """"""""""""""""""""""
 " NerdTree
 let g:NERDTreeSortOrder = ['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
-let NERDTreeIgnore = ['\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', '\.egg-info', '\.git$', '\.pytest_cache', '\.tox', 'node_modules', '\.tx', '\.mypy_cache']
+let NERDTreeIgnore = ['\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', '\.egg-info', '\.git$', '\.pytest_cache', '\.tox', 'node_modules', '\.mypy_cache']
 let NERDTreeShowHidden=1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
