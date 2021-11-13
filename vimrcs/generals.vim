@@ -108,24 +108,6 @@ set tm=500
 set scrolloff=999
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Netrw
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:netrw_liststyle = 3
-let g:netrw_banner = 0
-let g:netrw_browse_split = 4
-let g:netrw_winsize = 15
-
-let g:netrw_list_hide = '.*\.git,'
-let g:netrw_list_hide .= '.*\.pyc$,'
-let g:netrw_list_hide .= '.*\.swp$,'
-let g:netrw_list_hide .= '.*__pycache__,'
-let g:netrw_list_hide .= '.*\.mypy_cache,'
-let g:netrw_list_hide .= '.*\.pytest_cache,'
-let g:netrw_list_hide .= '.*\.tx,'
-let g:netrw_list_hide .= '.*node_modules,'
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM Behaviour
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set utf8 as standard encoding and en_US as the standard language
