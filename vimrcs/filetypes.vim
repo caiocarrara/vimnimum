@@ -22,6 +22,7 @@ autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set 2 tabspaces (identation) for js files
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 tw=0 expandtab
+autocmd Filetype javascriptreact setlocal ts=2 sts=2 sw=2 tw=0 expandtab
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
