@@ -23,7 +23,6 @@ Plug 'sbdchd/neoformat'
 Plug 'sheerun/vim-polyglot'
 Plug 'Raimondi/delimitMate'
 Plug 'google/vim-searchindex'
-Plug 'svermeulen/vim-cutlass'
 
 " Git
 Plug 'tpope/vim-fugitive'
