@@ -126,3 +126,10 @@ let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDTrimTrailingWhitespace = 1
+
+" Neoformat - Code formatters
+let g:neoformat_enabled_python = ['black', 'isort']
+let g:neoformat_enabled_javascript = ['prettier']
+let g:neoformat_enabled_javascriptreact = ['prettier']
+
+let g:neoformat_run_all_formatters = 1
