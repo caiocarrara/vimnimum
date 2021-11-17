@@ -131,5 +131,6 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:neoformat_enabled_python = ['black', 'isort']
 let g:neoformat_enabled_javascript = ['prettier']
 let g:neoformat_enabled_javascriptreact = ['prettier']
+let g:neoformat_enabled_yaml = ['prettier']
 
 let g:neoformat_run_all_formatters = 1
