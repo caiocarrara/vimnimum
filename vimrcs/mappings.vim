@@ -35,3 +35,7 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Neoformat
 map <C-i> :Neoformat<CR>
+
+" Keep Y as Y
+" After https://github.com/neovim/neovim/pull/13268
+nnoremap Y Y
