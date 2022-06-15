@@ -13,7 +13,7 @@ Just another vimrc configuration.
 The process below will write/change the `.vimrc` file content.
 
 ```
-$ git clone https://github.com/cacarrara/vimnimum.git ~/.vimnimum
+$ git clone https://github.com/caiocarrara/vimnimum.git ~/.vimnimum
 $ cd ~/.vimnimum
 $ sh install.sh
 ```
