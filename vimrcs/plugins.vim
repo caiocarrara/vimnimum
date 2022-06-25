@@ -37,6 +37,7 @@ Plug 'dense-analysis/ale'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'rust-lang/rust.vim'
+Plug 'hashivim/vim-terraform'
 
 " HTML
 Plug 'AndrewRadev/tagalong.vim'
