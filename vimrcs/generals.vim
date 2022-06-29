@@ -105,6 +105,9 @@ set tm=500
 " Keeps active line vertically centralized
 set scrolloff=999
 
+set foldmethod=indent
+set foldlevel=99
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM Behaviour
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
