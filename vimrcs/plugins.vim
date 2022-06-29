@@ -11,7 +11,10 @@ Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'gruvbox-community/gruvbox'
 
 " Basic
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
+Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+Plug 'lambdalisue/nerdfont.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'qpkorr/vim-bufkill'
@@ -53,15 +56,42 @@ call plug#end()
 " => Configs
 """"""""""""""""""""""
 " NerdTree
-let g:NERDTreeSortOrder = ['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
-let NERDTreeIgnore = ['\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', '\.egg-info', '\.git$', '\.pytest_cache', '\.tox', 'node_modules', '\.mypy_cache']
-let NERDTreeShowHidden=1
-let NERDTreeAutoDeleteBuffer = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" let g:NERDTreeSortOrder = ['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
+" let NERDTreeIgnore = ['\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', '\.egg-info', '\.git$', '\.pytest_cache', '\.tox', 'node_modules', '\.mypy_cache']
+" let NERDTreeShowHidden=1
+" let NERDTreeAutoDeleteBuffer = 1
+" let NERDTreeMinimalUI = 1
+" let NERDTreeDirArrows = 1
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+let g:fern#renderer = "nerdfont"
+
+let g:fern#default_exclude = '^\%(__pycache__\|\.git\|\.pytest_cache\|\.mypy_cache\|\.venv\|node_modules\|\.pyc\|\.db\|\.sqlite\)$'
+
+augroup FernGroup
+  autocmd!
+  autocmd FileType fern setlocal nonumber
+augroup END
+
+let g:loaded_netrw  = 1
+let g:loaded_netrwPlugin = 1
+let g:loaded_netrwSettings = 1
+let g:loaded_netrwFileHandlers = 1
+
+augroup my-fern-hijack
+  autocmd!
+  autocmd BufEnter * ++nested call s:hijack_directory()
+augroup END
+
+function! s:hijack_directory() abort
+  let path = expand('%:p')
+  if !isdirectory(path)
+    return
+  endif
+  bwipeout %
+  execute printf('Fern %s', fnameescape(path))
+endfunction
 
 " Airline
 if has('gui_running') || has('nvim')

@@ -19,8 +19,10 @@ nmap <C-b> :CtrlPBuffer<CR>
 nmap <C-m> :CtrlPMixed<CR>
 
 " NerdTree Toggle
-map <C-n> :NERDTreeToggle<CR>
-map <C-f> :NERDTreeFind<CR>
+" map <C-n> :NERDTreeToggle<CR>
+" map <C-f> :NERDTreeFind<CR>
+map <C-n> :Fern . -drawer -toggle -width=35<CR>
+map <C-f> :Fern . -drawer -reveal=% -width=35<CR>
 
 " TagBar Toggle
 nmap <F8> :TagbarToggle<CR>
