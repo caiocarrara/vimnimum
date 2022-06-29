@@ -13,8 +13,6 @@ if has('gui_running')
     set guioptions-=L  "remove left-hand scroll bar
     set mouse=c
     autocmd GUIEnter * set vb t_vb=
-
-    set guifont=Hack\ 9
 endif
 
 if has('gui_running') || has('nvim')
