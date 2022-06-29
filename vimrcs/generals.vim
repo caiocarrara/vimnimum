@@ -173,9 +173,6 @@ set nowrap
 set linebreak
 set nolist
 
-" No brackts match
-let loaded_matchparen = 1
-
 " Disable modeline (vulnerability)
 set modelines=0
 set nomodeline
