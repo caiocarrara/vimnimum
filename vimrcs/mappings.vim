@@ -5,24 +5,22 @@ let mapleader = ","
 let g:mapleader = ","
 
 " Navigate through buffs
-nmap <C-h> :bprevious<CR>
-nmap <C-l> :bnext<CR>
-nmap <C-j> :tabnext<CR>
-nmap <C-k> :tabprevious<CR>
+" nmap <C-h> :bprevious<CR>
+" nmap <C-l> :bnext<CR>
+" nmap <C-j> :tabnext<CR>
+" nmap <C-k> :tabprevious<CR>
+
+nmap <leader>z :bp<CR>
+nmap <leader>x :bn<CR>
 
 " Close buff
-" map <F2> :lclose<CR>:BD!<CR>
 map <F2> :bp <BAR> bd #<CR>
 
-" Opening CtrlP in different modes
-nmap <C-b> :CtrlPBuffer<CR>
-nmap <C-m> :CtrlPMixed<CR>
-
-" NerdTree Toggle
-" map <C-n> :NERDTreeToggle<CR>
-" map <C-f> :NERDTreeFind<CR>
-map <C-n> :Fern . -drawer -toggle -width=35<CR>
-map <C-f> :Fern . -drawer -reveal=% -width=35<CR>
+" Fern Toggle
+" map <C-n> :Fern . -drawer -toggle -width=35<CR>
+map <leader>n :Fern . -drawer -toggle -width=35<CR>
+map <leader>f :Fern . -drawer -reveal=% -width=35<CR>
+" map <C-f> :Fern . -drawer -reveal=% -width=35<CR>
 
 " TagBar Toggle
 nmap <F8> :TagbarToggle<CR>
@@ -36,7 +34,7 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Neoformat
-map <C-i> :Neoformat<CR>
+map <leader>i :Neoformat<CR>
 
 " Keep Y as Y
 " After https://github.com/neovim/neovim/pull/13268
