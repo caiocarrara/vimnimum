@@ -67,7 +67,7 @@ call plug#end()
 
 let g:fern#renderer = "nerdfont"
 
-let g:fern#default_exclude = '^\%(__pycache__\|\.git\|\.pytest_cache\|\.mypy_cache\|\.venv\|node_modules\|\.pyc\|\.db\|\.sqlite\)$'
+let g:fern#default_exclude = '__pycache__$\|^\.git$\|\.pytest_cache$\|\.mypy_cache$\|\.venv$\|node_modules$\|.\.pyc$\|.\.db$\|.\.sqlite$\|.\.egg-info$'
 
 augroup FernGroup
   autocmd!
