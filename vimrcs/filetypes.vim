@@ -37,9 +37,6 @@ autocmd BufNewFile,BufRead *.md,*.markdown set tw=72
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Python
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd FileType python setlocal colorcolumn=100
-
-" quickly add ipdb.set_trace() by typing PDB or IPDB
 iab IPDB import ipdb; ipdb.set_trace()
 iab PDB import pdb; pdb.set_trace()
 
