@@ -5,10 +5,10 @@ let mapleader = ","
 let g:mapleader = ","
 
 " Navigate through buffs
-" nmap <C-h> :bprevious<CR>
-" nmap <C-l> :bnext<CR>
-" nmap <C-j> :tabnext<CR>
-" nmap <C-k> :tabprevious<CR>
+nmap <C-h> :bprevious<CR>
+nmap <C-l> :bnext<CR>
+nmap <C-j> :tabnext<CR>
+nmap <C-k> :tabprevious<CR>
 
 nmap <leader>z :bp<CR>
 nmap <leader>x :bn<CR>
