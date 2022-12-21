@@ -4,10 +4,12 @@
 " set 2 tabspaces (identation) for html files
 autocmd BufNewFile,BufRead *.jinja2,*.j2,*.jinja,*.nunjucks,*.nunjs,*.njk set ft=jinja
 autocmd BufNewFile,BufRead *.jinja set syntax=htmljinja
+autocmd BufNewFile,BufRead *.ui set syntax=xml
 
 autocmd Filetype html set ts=2 sts=2 sw=2 tw=0 expandtab
 autocmd Filetype htmldjango set ts=2 sts=2 sw=2 tw=0 expandtab
 autocmd Filetype jinja set ts=2 sts=2 sw=2 tw=0 expandtab
+autocmd Filetype xml set ts=2 sts=2 sw=2 tw=0 expandtab
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -22,6 +24,7 @@ autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set 2 tabspaces (identation) for js files
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 tw=0 expandtab
+autocmd Filetype json setlocal ts=2 sts=2 sw=2 tw=0 expandtab
 autocmd Filetype javascriptreact setlocal ts=2 sts=2 sw=2 tw=0 expandtab
 
 
