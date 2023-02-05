@@ -9,6 +9,7 @@ autocmd BufNewFile,BufRead *.ui set syntax=xml
 autocmd Filetype html set ts=2 sts=2 sw=2 tw=0 expandtab
 autocmd Filetype htmldjango set ts=2 sts=2 sw=2 tw=0 expandtab
 autocmd Filetype jinja set ts=2 sts=2 sw=2 tw=0 expandtab
+autocmd Filetype jinja.html set ts=2 sts=2 sw=2 tw=0 expandtab
 autocmd Filetype xml set ts=2 sts=2 sw=2 tw=0 expandtab
 
 
