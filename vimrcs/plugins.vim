@@ -44,7 +44,6 @@ Plug 'rust-lang/rust.vim'
 Plug 'hashivim/vim-terraform'
 
 " HTML
-Plug 'AndrewRadev/tagalong.vim'
 Plug 'gregsexton/matchtag'
 
 " Javascript
