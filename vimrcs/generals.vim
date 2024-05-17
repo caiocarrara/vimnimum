@@ -176,3 +176,7 @@ set nolist
 " Disable modeline (vulnerability)
 set modelines=0
 set nomodeline
+
+set maxmempattern=3000
+set redrawtime=10000
+set re=0

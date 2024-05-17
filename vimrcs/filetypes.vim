@@ -61,3 +61,8 @@ autocmd Filetype css setlocal ts=2 sts=2 sw=2 tw=0 expandtab
 " => Git commit
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd Filetype gitcommit setlocal tw=72 spell spelllang=en_us
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Go lang
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4

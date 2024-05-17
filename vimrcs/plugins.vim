@@ -27,6 +27,8 @@ Plug 'sbdchd/neoformat'
 Plug 'sheerun/vim-polyglot'
 Plug 'Raimondi/delimitMate'
 Plug 'google/vim-searchindex'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-easytags'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -49,6 +51,9 @@ Plug 'gregsexton/matchtag'
 " Javascript
 Plug 'pangloss/vim-javascript'
 Plug 'isRuslan/vim-es6'
+
+" Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 
