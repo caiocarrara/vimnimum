@@ -19,11 +19,12 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'sbdchd/neoformat'
-Plug 'sheerun/vim-polyglot'
 Plug 'Raimondi/delimitMate'
 Plug 'google/vim-searchindex'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-easytags'
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -155,3 +156,15 @@ let g:go_debug_windows = {
     \ 'stack':      'leftabove 20new',
     \ 'out':        'botright 5new',
 \ }
+
+
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "bash", "css", "diff", "dockerfile", "dot", "gitcommit", "gitignore", "go", "html", "htmldjango", "javascript", "lua", "python", "vim", "vimdoc", "yaml" },
+  sync_install = false,
+  highlight = {
+    enable = true,
+    indent = true,
+  },
+}
+EOF
