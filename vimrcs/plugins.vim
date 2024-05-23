@@ -154,3 +154,9 @@ let g:neoformat_enabled_javascriptreact = ['prettier']
 let g:neoformat_enabled_yaml = ['prettier']
 
 let g:neoformat_run_all_formatters = 1
+
+let g:go_debug_windows = {
+    \ 'vars':       'leftabove 60vnew',
+    \ 'stack':      'leftabove 20new',
+    \ 'out':        'botright 5new',
+\ }
