@@ -11,7 +11,6 @@ Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'gruvbox-community/gruvbox'
 
 " Basic
-" Plug 'scrooloose/nerdtree'
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/fern-git-status.vim'
